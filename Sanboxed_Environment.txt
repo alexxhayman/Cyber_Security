@@ -1,0 +1,74 @@
+Cyber Security
+Portfolio 1
+Due Date: 17 October 2023
+Student ID: HAY21542192
+
+Overview:
+
+  The objective of this task is to deploy a sandboxed network. 
+  There are 5 virtual machines in this sandboxed environment:
+    1. Ubuntu Server and Gateway
+    2. Kali Linux
+    3. Ubuntu 14.04 (wordpress)
+    4. Ubuntu 22.04 (wordpress)
+    5. Windows 10
+
+  All devices on the network will have their network cards pointed internally, except for the ubuntu server and gateway. 
+  The gateway will have it's first network card set to NAT (external network) and the second network card will be pointed inwards.
+
+Setting up the virtual machines:
+
+# Command Terminal
+
+- use “ip a” to view the IP Address of the device you are on for linux terminals
+- ctrl c will cancel the current operation (will stop the endless scrolling of text)
+- ping IP address is used to view connection between 2 devices
+- clicking the up arrow key will show you what values have been entered into the terminal
+
+### Importing Virtual Machines
+
+- when you import a virtual machine onto your machine using a virtual box - it gives the machine a new mac address - we need to change this in order to communicate with the device
+- you can control a virtual machine using the graphical interface or using the terminal
+- we need to use the terminal in this case
+
+### when you close a virtual machine:
+
+- click file and close and power off
+
+
+## hecking internet connection
+
+nslookup "domain_name"
+
+the shell, terminal and command line are all the same thing
+
+## Backing up virtual machines
+
+- File
+- export appliance
+- change version to 2.0
+
+Setting up the windows machine
+
+virtual box windows
+
+- new
+- find your iso file
+- name it windows 10
+- uncheck skip unattended installation
+- change to 4gb ram
+- 1 cpu
+- leave storage at 50gb
+    - leave preallocate full size unchecked so that it does not partition the whole drive straigth away
+    - it will rather use up the space as it needs leaving space if you dont use it
+- make your subnet mask length 24
+- change ip address to 192.168.123.40
+- change dns to 8.8.4.4
+
+make sure you switch the firewall off to see if you can ping other devices on the network
+
+unattended mode
+
+
+
+
